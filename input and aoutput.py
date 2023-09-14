@@ -1,0 +1,7 @@
+first_name = input("what is your first name? ")
+last_name = input("What is your last name? ")
+print(f"Your name is. {last_name}, {first_name} {last_name}")
+# print("your name is, {} {}".formatlast_name.capitalize() + '' + first_name.capitalize())
+first_name = input("what is your first name? ")
+last_name = input("What is your last name? ")
+print(f"Your name is. {last_name.title()}, {first_name.title()} {last_name.title()}")
