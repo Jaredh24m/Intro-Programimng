@@ -1,6 +1,6 @@
 # I had a lot of fun doing this project, although it represents a challenge for me because everything 
 # I am learning is new, and it is my first time programming but I am happy to be able to achieve it. 
-# I will give you the words that you use to be able to run my program 
+# I will give you the words that you use to be able to run my program: 
 # Adjective: Angry
 # Animal: Lion
 # Verb: Eat
