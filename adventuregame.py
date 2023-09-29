@@ -9,6 +9,8 @@ if type.lower() == "match":
         print(f"Bad idea with the wind that makes it would turn it off again and you would be left in the dark")
     elif idea.lower() == "make a fire":
         print(f"You would be safe at night because animals don't like fire.")
+    else:
+        print(f"Don't waste your opportunities, remember they are the last.")
 elif type.lower() == "flashlight":
     print(f"You will continue walking through the dark forest")
     #2 scenery
