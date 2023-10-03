@@ -343,9 +343,78 @@
 
 # print(f"The number is: {number} ")
 
-answer = ""
+# answer = ""
 
-while answer != "yes":
-    answer = input("May I have a piece of candy? ")
+# while answer != "yes":
+#     answer = input("May I have a piece of candy? ")
 
-print("Thank you")
+# print("Thank you")
+
+# items = ["crayon", "scissors", "paper", "glotter glue", "markers", "pens"]
+# for item in items:
+#     print(f"The item is: {item}")
+
+# colors = ["red", "blue", "green", "yellow"]
+# for color in colors:
+#     print(color)
+    
+# for i in range (1,9):
+#     print(i)
+
+# for i in range (2, 21, 2):
+#     print(i)
+
+# first_name = "Brigham"
+# for letter in first_name:
+#     print(f"The letter is: {letter}")
+
+# word = "Commitment"
+# favorite_letter = input("What is your favorite letter? ")
+# for letter in word:
+#     if letter.lower() == favorite_letter.lower():
+#         print(letter.upper(), end="")
+#     else:
+#         print(letter.lower(), end="")
+# print()
+
+# for letter in word:
+#     if letter.lower() == favorite_letter.lower():
+#         print("_", end="")
+#     else:
+#         print(letter.lower(), end="")
+# print()
+
+# animal = "rabbit"
+# while animal == "dog":
+#    print("a")
+#    animal = "cat"
+#    print("b")
+# print("c")
+
+# animal = "dog"
+# while animal == "dog":
+#    print("a")
+#    animal = "cat"
+#    print("b")
+# print("c")
+
+# animal = "dog"
+# while animal != "dog":
+#    print("a")
+#    animal = "cat"
+#    print("b")
+# print("c")
+
+# value = 10
+# while value < 20:
+#    value = value + 1
+# print(value)
+
+# while value < 20:
+#    value = value + 1
+# print(value)
+
+value = 20
+while value < 20:
+   value = value + 1
+print(value)
