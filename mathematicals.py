@@ -384,37 +384,48 @@
 #         print(letter.lower(), end="")
 # print()
 
-# animal = "rabbit"
-# while animal == "dog":
-#    print("a")
-#    animal = "cat"
-#    print("b")
-# print("c")
 
-# animal = "dog"
-# while animal == "dog":
-#    print("a")
-#    animal = "cat"
-#    print("b")
-# print("c")
+import random
 
-# animal = "dog"
-# while animal != "dog":
-#    print("a")
-#    animal = "cat"
-#    print("b")
-# print("c")
+# magic_number = random.randint(1,100)
+# guess = 2
+# while guess != magic_number:
+#     guess = int(input("What is your guess? "))
 
-# value = 10
-# while value < 20:
-#    value = value + 1
-# print(value)
+#     if guess < magic_number:
+#         print("Higher")
+#     elif guess > magic_number:
+#         print("Lower")
+#     else:
+#         print("You guessed it!")
 
-# while value < 20:
-#    value = value + 1
-# print(value)
+# keep_playing = "yes"
 
-value = 20
-while value < 20:
-   value = value + 1
-print(value)
+# while keep_playing == "yes":
+#     magic_number = random.randint(1,100)
+#     guess_count = 0
+#     guess = -1
+#     while guess != magic_number:
+#         guess = int(input("What is your guess? "))
+#         guess_count = guess_count + 1
+#         if guess < magic_number:
+#             print("Higher")
+#         elif guess > magic_number:
+#             print("Lower")
+#         else:
+#             print("You guessed it!")
+#     print(f"It took you {guess_count} guesses")
+#     keep_playing = input("Would you like to play again (yes/no)? ")
+# print("Thank you for playing. Goodbye.")
+
+secret = "mosiah"
+
+print("Welcome to the word guessing game!")
+
+print(f"Your hint is: {len(secret)} ")
+
+# while guess != secret:
+#    guess = int(input("What is your guess? "))
+#    guess_count = guess_count + 1
+
+
