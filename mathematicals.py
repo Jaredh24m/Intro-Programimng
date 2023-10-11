@@ -418,33 +418,128 @@ import random
 #     keep_playing = input("Would you like to play again (yes/no)? ")
 # print("Thank you for playing. Goodbye.")
 
-hint = ['_', '_', '_', '_', '_', '_']
-hint_result = ' '.join(hint) 
+# hint = ['_', '_', '_', '_', '_', '_']
+# hint_result = ' '.join(hint) 
 
-secret = "mosiah"
-guess_count = 0
+# secret = "mosiah"
+# guess_count = 0
 
-print("Welcome to the word guessing game!")
+# print("Welcome to the word guessing game!")
 
-print(f"Your hint is:{hint_result}")
-guess_word = input("What is your guess? ")
+# print(f"Your hint is:{hint_result}")
+# guess_word = input("What is your guess? ")
 
-while (secret != guess_word):
-   if (len(secret) != len(guess_word)):
-      print()
-      print("Sorry, the guess must have the same number of letters as the secret word.")
-      guess_word = input("What is your guess? ")
-   else: 
-      for i in range(len(secret)):
-         for j in range(len(guess_word)):
-            # print(f"{i} - {j}"")
-            # print(f"{guess_word[i]} - {secret_word[j]})
-            if (list(guess_word)[i] == list(secret)[j]):
-               hint[i] = guess_word[i]
-               hint_result = " ".join(hint)
-      guess_count = guess_count + 1
-      print(f"Your hint is: {hint_result}")
-      guess_word = input("What is your guess? ")
-print(f"It took you {guess_count} guesses")
-print("Thank you for playing. Goodbye.")
+# while (secret != guess_word):
+#    if (len(secret) != len(guess_word)):
+#       print()
+#       print("Sorry, the guess must have the same number of letters as the secret word.")
+#       guess_word = input("What is your guess? ")
+#    else: 
+#       for i in range(len(secret)):
+#          for j in range(len(guess_word)):
+#             # print(f"{i} - {j}"")
+#             # print(f"{guess_word[i]} - {secret_word[j]})
+#             if (list(guess_word)[i] == list(secret)[j]):
+#                hint[i] = guess_word[i]
+#                hint_result = " ".join(hint)
+#       guess_count = guess_count + 1
+#       print(f"Your hint is: {hint_result}")
+#       guess_word = input("What is your guess? ")
+# print(f"It took you {guess_count} guesses")
+# print("Thank you for playing. Goodbye.")
 
+# friends = []
+
+
+# new_friend = ""
+# while new_friend != "end":
+#     new_friend = input("Type the name of a friend: ")
+#     friends.append(new_friend)
+
+# # friends.append("Mathew")
+# # friends.append("Mark")
+# # friends.append("Luke")
+# # friends.append("John")
+# # friends.append("Mathew")
+# print()
+# print("Your friends are: ")
+
+# for friend in friends:
+#     print(friend)
+
+# friends = []
+# name = None
+# while name != "end":
+#     name = input("Type the name of a friend: ")
+#     if name != "end":
+#         friends.append(name)
+# print()
+# print("Your friends are:")
+# for friend in friends:
+#     print(friend)
+
+# print("Please enter the items of the shoping list (type: quit to finish):")
+
+# shopping_list = []
+# item = None
+# while item != "quit":
+#     item = input("Item: ")
+#     if item != "quit":
+#         shopping_list.append(item)
+# print("\nThe shopping list is:")
+# for item in shopping_list:
+#     print(item)
+# print("\nThe shopping list with indexes is:")
+# for i in range(len(shopping_list)):
+#     item = shopping_list[i]
+#     print(f"{i}. {item}")
+# print()
+# index = int(input("Which item would you like to change? "))
+# new_item = input("What is the new item? ")
+
+# shopping_list[index] = new_item
+
+# print("\nThe shopping list with indexes is:")
+# for i in range(len(shopping_list)):
+#     item = shopping_list[i]
+#     print(f"{i}. {item}")
+
+
+
+print("Enter a list of numbers, type 0 when you finished.")
+numbers = []
+number = -1
+while number != 0:
+    number = int(input("Enter number: "))
+    if number != 0:
+        numbers.append(number)
+
+sum = 0
+for number in numbers:
+    sum += number
+
+print(f"The sum is: {sum}")
+
+count = len(numbers)
+average = sum / count
+
+print (f"The average is: {average}")
+
+best_so_far = -1
+for number in numbers:
+    if number > best_so_far:
+        best_so_far = number
+
+print(f"The largest number is: {best_so_far}")
+
+smallest_so_far = 99999999999
+for number in numbers:
+    if number > 0 and number < smallest_so_far:
+        smallest_so_far = number
+
+print(f"The smallest positive number is: {smallest_so_far}")
+sorted_list = sorted(numbers)
+
+print("The stored list is:")
+for number in sorted_list:
+    print(number)
