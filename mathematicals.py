@@ -506,40 +506,57 @@ import random
 
 
 
-print("Enter a list of numbers, type 0 when you finished.")
-numbers = []
-number = -1
-while number != 0:
-    number = int(input("Enter number: "))
-    if number != 0:
-        numbers.append(number)
+# print("Enter a list of numbers, type 0 when you finished.")
+# numbers = []
+# number = -1
+# while number != 0:
+#     number = int(input("Enter number: "))
+#     if number != 0:
+#         numbers.append(number)
 
-sum = 0
-for number in numbers:
-    sum += number
+# sum = 0
+# for number in numbers:
+#     sum += number
 
-print(f"The sum is: {sum}")
+# print(f"The sum is: {sum}")
 
-count = len(numbers)
-average = sum / count
+# count = len(numbers)
+# average = sum / count
 
-print (f"The average is: {average}")
+# print (f"The average is: {average}")
 
-best_so_far = -1
-for number in numbers:
-    if number > best_so_far:
-        best_so_far = number
+# best_so_far = -1
+# for number in numbers:
+#     if number > best_so_far:
+#         best_so_far = number
 
-print(f"The largest number is: {best_so_far}")
+# print(f"The largest number is: {best_so_far}")
 
-smallest_so_far = 99999999999
-for number in numbers:
-    if number > 0 and number < smallest_so_far:
-        smallest_so_far = number
+# smallest_so_far = 99999999999
+# for number in numbers:
+#     if number > 0 and number < smallest_so_far:
+#         smallest_so_far = number
 
-print(f"The smallest positive number is: {smallest_so_far}")
-sorted_list = sorted(numbers)
+# print(f"The smallest positive number is: {smallest_so_far}")
+# sorted_list = sorted(numbers)
 
-print("The stored list is:")
-for number in sorted_list:
-    print(number)
+# print("The stored list is:")
+# for number in sorted_list:
+#     print(number)
+
+
+print("Welcome to the Shopping Cart Program!") 
+
+print("1.Add item \n2.View cart \n3.Remove item, \n4.Compute total, \n5.Quit")
+action = None
+print("Please select one of the following: ")
+for i in range(len(action_list)):
+    action = action_list[i]
+    print(f"{i}. {action}")
+while action != "quit":
+    action = input("Please enter an action: ")
+    if action != "quit":
+        action_list.append(action)
+while action != "Add item":
+    index = input("Which item would you like to add? ")
+    index = int(input("Which item would you like to add? "))
