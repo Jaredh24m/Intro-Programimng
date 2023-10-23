@@ -21,6 +21,8 @@ else:
 
 
 # And this other part is with a table type where the values are printed and everything
+
+
 def celsius_to_fahrenheit(celsius):
     """Convert Celsius temperature to Fahrenheit."""
     return (celsius * 9/5) + 32
